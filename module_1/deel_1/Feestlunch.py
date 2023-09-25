@@ -1,4 +1,4 @@
-aantal_croissantjes = 17
+AANTAL = 17
 prijs_per_croissantje = 0.39
 
 aantal_stokbroden = 2
@@ -7,7 +7,7 @@ prijs_per_stokbrood = 2.78
 aantal_kortingsbonnen = 3
 waarde_per_kortingsbon = 0.50
 
-totale_kosten_zonder_korting = (aantal_croissantjes * prijs_per_croissantje) + (aantal_stokbroden * prijs_per_stokbrood)
+totale_kosten_zonder_korting = (AANTAL * prijs_per_croissantje) + (aantal_stokbroden * prijs_per_stokbrood)
 
 totale_korting = aantal_kortingsbonnen * waarde_per_kortingsbon
 
