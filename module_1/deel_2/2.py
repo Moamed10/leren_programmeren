@@ -6,10 +6,11 @@
 TOTAAL_PERSONEN = int(input("hoeveel personen ? "))
 TOEGANS_TIECKET  = 7.45
 VIP_VR_5MIN = 0.37
+AANTAL_MIN_PRIJS = 5
 aantal_min_per_persoon = int(input("hoeveel min wilt u in de vip blijve "))
 TOEGANS_TIECKET_prijs = TOTAAL_PERSONEN * TOEGANS_TIECKET
 
-aantal_min_vp_prijs = (VIP_VR_5MIN / 5 * aantal_min_per_persoon ) * TOTAAL_PERSONEN
+aantal_min_vp_prijs = (VIP_VR_5MIN / AANTAL_MIN_PRIJS * aantal_min_per_persoon ) * TOTAAL_PERSONEN
 
 totaal = aantal_min_vp_prijs + TOEGANS_TIECKET_prijs
 

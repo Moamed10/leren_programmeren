@@ -20,17 +20,17 @@
 # Achternaam: [almahmoud]
 # Opdracht: Pizza Calculator
 
-small_prijs = 8.99
-medium_prijs = 12.99
-large_prijs = 16.99
+SMALL_PRIJS = 8.99
+MEDIUM_PRIJS = 12.99
+LARGE_PRIJS = 16.99
 
 aantal_small = int(input("Hoeveel small pizza's wil je bestellen? "))
 aantal_medium = int(input("Hoeveel medium pizza's wil je bestellen? "))
 aantal_large = int(input("Hoeveel large pizza's wil je bestellen? "))
 
-prijs_small = aantal_small * small_prijs
-prijs_medium = aantal_medium * medium_prijs
-prijs_large = aantal_large * large_prijs
+prijs_small = aantal_small * SMALL_PRIJS
+prijs_medium = aantal_medium * MEDIUM_PRIJS
+prijs_large = aantal_large * LARGE_PRIJS
 
 totaal_prijs = prijs_small + prijs_medium + prijs_large
 
