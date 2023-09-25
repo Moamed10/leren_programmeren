@@ -1,0 +1,11 @@
+name = str(input("what is your name ?"))
+adres = str(input("what is your adres ?"))
+postal_code = (input("what is your postal code ?"))
+place = str(input("where do  you live ?"))
+
+print("-" * 20)
+print(f"| Name : {name}")
+print(f"| Adres : {adres}")
+print(f"| Postal code : {postal_code}")
+print(f"| Place : {place}")
+print("-" * 20)
