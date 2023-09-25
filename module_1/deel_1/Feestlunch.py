@@ -1,13 +1,13 @@
-AANTAL = 17
+aantal_croissant = int(input("hoeveel crosiant wilt u ?"))
 prijs_per_croissantje = 0.39
 
-aantal_stokbroden = 2
+aantal_stokbroden = int(input("hoeveel stokborden wilt u ?"))
 prijs_per_stokbrood = 2.78
 
-aantal_kortingsbonnen = 3
+aantal_kortingsbonnen = int(input("hoeveel kortingbonnen heeft u ?"))
 waarde_per_kortingsbon = 0.50
 
-totale_kosten_zonder_korting = (AANTAL * prijs_per_croissantje) + (aantal_stokbroden * prijs_per_stokbrood)
+totale_kosten_zonder_korting = (aantal_croissant * prijs_per_croissantje) + (aantal_stokbroden * prijs_per_stokbrood)
 
 totale_korting = aantal_kortingsbonnen * waarde_per_kortingsbon
 
