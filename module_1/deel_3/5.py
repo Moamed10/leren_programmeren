@@ -8,7 +8,7 @@
 # Let op: Zorg er voor dat de punten uit de vorige opdracht ook werken, als je 0 gasten hebt betekend dit dat er geen 
 # gasten zijn. Je mag geen nieuwe 
 # if’s aanmaken!
-
+#  to do
 
 gastheer = input("Wie is de gastheer? (Laat leeg als er geen gastheer is): ")
 gasten = int(input("hoeveel gaste? : "))
@@ -20,11 +20,18 @@ MIJN_NAAM = "mohamed"
 SLP = "mo"
 
 
-if gastheer == MIJN_NAAM:
-    print("start party zelfde naam mijn naam")
-elif gastheer == SLP:
-    print("no party zelfde slp naam ")
-elif(chips and drank and  (20>= gasten >= 4)) or (gastheer and drank ):
-    print('Start the Party')
+if (gastheer == MIJN_NAAM  ) or (chips and drank and 20 >= gasten >= 4 and gastheer != SLP) or (gastheer and drank and gastheer != SLP ):
+    print("start party")
 else:
     print('No Party')
+
+
+
+# if gastheer == MIJN_NAAM:
+#     print("start party zelfde naam mijn naam")
+# elif gastheer == SLP:
+#     print("no party zelfde slp naam ")
+# elif(chips and drank and  (20>= gasten >= 4)) or (gastheer and drank ):
+#     print('Start the Party')
+# else:
+#     print('No Party')

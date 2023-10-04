@@ -1,6 +1,6 @@
 
 OPTIES = print("Kies 0: altijd; 1: vaak; 2: regelmatig; 3: soms; 4: nooit")
-stellingen = [
+vragen_1 = [
     'Ik voel stress of blokkades bij het maken van programmeeropdrachten.',
     'Ik stel programmeeropdrachten en -uitdagingen uit.',
     'Ik denk dat ik geen talent heb voor de opleiding.',
@@ -12,7 +12,7 @@ stellingen = [
 totaal_vragen = 0
 
 aantwoorden = []
-for steling in stellingen:
+for steling in vragen_1:
     totaal_vragen += 1
     print (steling)
     print(OPTIES)
@@ -21,6 +21,7 @@ for steling in stellingen:
 
 totaal_aantworden = sum(aantwoorden) 
 gemmideld_score = totaal_aantworden / totaal_vragen
+
  
 
 
@@ -37,3 +38,7 @@ if gemmideld_score == 3:
 
 if gemmideld_score == 4:
     print("Het lijkt erop dat je voldoende zelfvertrouwen, voldoening en plezier ervaart inhet leren programmeren. Mocht het een keer minder gaan, maak je geen zorgen. Have fun!")
+
+
+
+print(f"you aantwoorde {aantwoorden}")

@@ -61,8 +61,8 @@ else:
     print("no")  
 if rijbewijs is "nee" and MIN_GEWICHT > gewicht > MAX_GEWICHT and MIN_LENGTE > lengte > MAX_LENGTE:
     print("je hebt proplemen met basic")
-if dieren_dressuur < DIEREN_ERVARING_NODIG or jogleren_1 < JOGLEREN_2ERVARING:
+if dieren_dressuur < DIEREN_ERVARING_NODIG or jogleren_1 < JOGLEREN_2ERVARING or acrobatiek < ACROBATIEK_2ERVARING:
     print("je hebt niet genoeg ervaring")
 if snorlengte < MIN_SNOR_BREEDTE or haarlengte < MIN_HAAR_LENGTE or glimlach_breedte < MIN_GLIMLACH_BREEDTE:
-    print("je snor/glimlach/roodhaar niet goes")
+    print("je snor/glimlach/roodhaar niet goed")
 

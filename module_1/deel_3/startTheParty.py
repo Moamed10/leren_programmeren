@@ -14,9 +14,9 @@
 
 
 
-gastheer = True
-gasten = False
-drank = False
+gastheer = False
+gasten = True
+drank = True
 chips = False
 
 

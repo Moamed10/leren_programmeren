@@ -15,23 +15,29 @@
 
 
 gastheer = input("Wie is de gastheer? (Laat leeg als er geen gastheer is): ")
-gasten = False
+gasten = True
 
 drank = True
-chips = False
+chips = True
 
 MIJN_NAAM = "mohamed"
-SLP = "mo"
+SLB = "mo"
 
 
-if gastheer == MIJN_NAAM:
+if (gastheer == MIJN_NAAM  ) or (chips and drank and 20 >= gasten <= 4 and gastheer != SLB) or (gastheer and drank and gastheer != SLB ):
     print("start party")
-elif gastheer == SLP:
-    print("no party")
-elif(chips and drank and gasten) or (gastheer and drank ):
-    print('Start the Party')
 else:
     print('No Party')
+
+
+
+
+# elif gastheer == SLB:
+#     print("no party")
+# elif(chips and drank and gasten) or (gastheer and drank ):
+#     print('Start the Party')
+# else:
+#     print('No Party')
 
 
 
