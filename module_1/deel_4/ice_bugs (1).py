@@ -8,6 +8,6 @@ amount_s = int(input('Hoeveel ijsjes van {} wil je bestellen? '.format(convertTo
 amount_m = int(input('En hoeveel ijsjes van {} wil je bestellen? '.format(convertToEuroText(MEDIUM_PRICE))))
 
 
-totalPrice = int(amount_s * SMALL_PRICE + amount_m * MEDIUM_PRICE)  # Bereken de totale prijs
+totalPrice = int(amount_s * SMALL_PRICE + amount_m * MEDIUM_PRICE)  
 
 print('Dat is dan {} totaal'.format(convertToEuroText(totalPrice)))
