@@ -1,22 +1,15 @@
-def vraag_getal(aantal):
-    antwoord = float(input("Voer het "+aantal+" getal in: "))
-    getal = int(antwoord)
-    return getal
+a = input(('Geef een woord'))
+b = input('Geef nog een woord')
 
-def deel_getallen(a, b):
-    antwoord = a / b
-    return antwoord
-    
+len_woord1 = len(a)
+len_woord2 = len(b)
 
-getal_1 = vraag_getal("eerste")
-getal_2 = vraag_getal("tweede")
-
-
-if getal_2 == 0:
-    print("Kan niet delen door 0")
-else:
-    resultaat = deel_getallen(getal_1, getal_2)
-    print("{} gedeeld door {} is gelijk aan {}".format(getal_1, getal_2, resultaat))
+if len_woord1 > len_woord2:     
+    print('Woord 1 heeft meer letters dan woord 2')
+elif len_woord1 < len_woord2:   
+    print('Woord 1 heeft minder letters dan woord 2')
+else:                   
+    print('Woord 1 en woord 2 hebben evenveel letters')
     
 
 

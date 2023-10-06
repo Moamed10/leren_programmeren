@@ -1,6 +1,6 @@
 def vraag_woord(aantal):
-    antwoord = str(input(f"voer {aantal} in"))
-    woord = str(antwoord)
+    antwoord = input(f"voer {aantal} in")
+    woord = (antwoord)
     return woord
 
 def tel_woord(a,b):
@@ -18,3 +18,5 @@ elif woord_1 < woord_2:
     print('Woord 1 heeft minder letters dan woord 2')
 else:                   
     print('Woord 1 en woord 2 hebben evenveel letters')
+
+print(tel_woord(woord_1,woord_2))
