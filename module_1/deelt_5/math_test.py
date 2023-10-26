@@ -1,4 +1,4 @@
-from math_operations import increment, decrement, add, substract, multiply, divide
+from mo import increment, decrement, add, substract, multiply, divide
 from test_lib import test, report
 
 nr1 = 3.0
