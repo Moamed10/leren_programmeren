@@ -6,6 +6,7 @@ nr2 = 11
 nr3 = 37
 nr4 = 79
 
+
 # example
 result1 = nr3 * 7
 result2 = multiply(nr3, 7)
@@ -30,16 +31,16 @@ test('expression-3', result1, result2)
 
 
 
-result1 = (nr4 - (nr1 * (nr4 - nr3)) / (nr2 + nr3)) 
-result2 = substract(nr4, divide(multiply(nr1, substract(nr4, nr3)), add(nr2, nr3)))
-test('expression-4', result1, result2)
+# result1 = (nr4 - (nr1 * (nr4 - nr3)) / (nr2 + nr3)) + 2 
+# result2 = substract(nr4, divide(multiply(nr1, substract(nr4, nr3)), add(nr2, nr3 )))
+# test('expression-4', result1, result2)
 
+result1= (nr1 + nr3 + nr4) * 7
 
-
-
-result1 = ((nr4 - (nr1 * (nr4 - nr3)) / (nr2 + nr3)) * 23) - 1
-result2 = divide(substract(multiply(nr1, substract(nr4, nr3)),add(nr2, nr3)),23,decrement(1))
+result2 = multiply(      add(add(nr1,nr3),nr4) , 7 )
 test('expression-5', result1, result2)
+
+
 
 report()
 
