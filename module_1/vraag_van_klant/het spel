@@ -1,0 +1,33 @@
++-----------------------------------------------------------------------+
+| Stap | Locatie                     | Keuzes                                  |
++-----------------------------------------------------------------------+
+| 1    | Aan de rand van het bos     | 1. Volg het pad naar de oude stad.     |
+|      |                             | 2. Duik het dichte struikgewas in.     |
++-----------------------------------------------------------------------+
+| 2    | Verloren Stadspoort         | 1. Betreed het verlaten marktplein.    |
+|      |                             | 2. Ga verder langs de verwoeste straten|
++-----------------------------------------------------------------------+
+| 3    | Verlaten Marktplein         | a. De Geheimzinnige Tovenaar:          |
+|      |                             |    1. Luister naar zijn aanbod.       |
+|      |                             |    2. Weiger zijn aanbod.             |
+|      |                             | b. Het Oude Kasteel:                   |
+|      |                             |    1. Betreed het kasteel.            |
+|      |                             |    2. Ga verder naar de achterkant.   |
++-----------------------------------------------------------------------+
+| 4    | Betoverde Bron              | 1. Drink van het betoverde water.      |
+|      |                             | 2. Negeer de bron en ga verder.       |
++-----------------------------------------------------------------------+
+| 5    | Betoverd Bos                | 1. Verken het betoverde bos.           |
+|      |                             | 2. Ga verder met je oorspronkelijke pad|
++-----------------------------------------------------------------------+
+| 6    | Mysterieuze Tovenaar        | 1. Accepteer zijn aanbod.              |
+|      |                             | 2. Weiger zijn aanbod.                |
++-----------------------------------------------------------------------+
+| Eindes                            | - Win Einde: Het betoverde bos en de   |
+|                                   |   stad herstellen.                    |
+|                                   | - Faal Einde 1: De stad blijft in     |
+|                                   |   eeuwige duisternis.                 |
+|                                   | - Het Laatste Gevecht: Help de dieven|
+|                                   |   en deel de buit OF stop de dieven  |
+|                                   |   en bescherm de erfenis van de stad.|
++-----------------------------------------------------------------------+
