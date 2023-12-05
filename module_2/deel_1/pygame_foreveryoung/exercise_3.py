@@ -2,25 +2,17 @@ from RobotArm import RobotArm
 
 robotArm = RobotArm('exercise 3')
 
-# Jouw python instructies zet je vanaf hier:
+from RobotArm import RobotArm
+
+robotArm = RobotArm('exercise 3')
 robotArm.speed = 3
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
-robotArm.moveLeft()
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
-robotArm.moveLeft()
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
-robotArm.moveLeft()
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
 
+for _ in range(4):
+    robotArm.grab()
+    robotArm.moveRight()
+    robotArm.drop()
+    robotArm.moveLeft()
+robotArm.moveRight()
 
-
-# Na jouw code wachten tot het sluiten van de window:
+# Wait for the window to close
 robotArm.wait()
