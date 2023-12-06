@@ -1,8 +1,8 @@
 from time import sleep
 
 
-for x in  reversed(range(31 )):
+for x in  range(31,0 , -1):
     print(x)
-    sleep(1)
+
     
 print("lancering")

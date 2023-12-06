@@ -3,17 +3,23 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 4')
 
 # Jouw python instructies zet je vanaf hier:
+# robotArm.speed = 3
+
 
 for x in range(5):
-    robotArm.grab()
-    robotArm.moveRight()
-    robotArm.moveRight()
-    robotArm.drop()
-    robotArm.moveLeft()
-    robotArm.moveLeft()
 
-robotArm.moveRight()
-robotArm.moveRight()
+    robotArm.grab()
+    if x < 4 :
+     robotArm.moveRight()
+    robotArm.moveRight()
+    if x < 4:
+     robotArm.drop()
+    if x  < 4 :
+        robotArm.moveLeft()
+        robotArm.moveLeft()
+    
+
+robotArm.drop()
 
 
 for x in range(5):
