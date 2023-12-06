@@ -4,9 +4,9 @@ robotArm = RobotArm('exercise 2')
 robotArm.speed = 3
 
 robotArm.grab()
+
 for x in range(9):
  robotArm.moveRight()
-
 robotArm.drop()
 
 
