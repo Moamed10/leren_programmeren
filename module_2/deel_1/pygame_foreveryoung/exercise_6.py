@@ -8,14 +8,14 @@ robotArm.moveRight()
 robotArm.speed = 3
 
 for x in range(3):
- robotArm.grab()
- robotArm.moveLeft()
- robotArm.drop()
- robotArm.moveRight()
- robotArm.grab()
- robotArm.moveRight()
- robotArm.drop()
- robotArm.moveLeft()
+    robotArm.grab()
+    robotArm.moveLeft()
+    robotArm.drop()
+    robotArm.moveRight()
+    robotArm.grab()
+    robotArm.moveRight()
+    robotArm.drop()
+    robotArm.moveLeft()
 
 
 

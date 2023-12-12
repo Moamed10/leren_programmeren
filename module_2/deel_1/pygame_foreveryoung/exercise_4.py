@@ -20,9 +20,10 @@ for x in range(5):
     
 
 robotArm.drop()
+robotArm.moveRight()
 
 
-for x in range(5):
+for x in range(4):
     robotArm.grab()
     robotArm.moveLeft()
     robotArm.drop()
