@@ -11,7 +11,7 @@ def calc_discount(price: float, brand: str, month_discount_brands: list) -> floa
         return round(discount_price ,2)
     return price
     
-brand = "kimco"
+brand = "mo"
 price = 60.00
 expect_content = 54.00
 calculated_content = calc_discount(price, brand,month_discount_brands)
