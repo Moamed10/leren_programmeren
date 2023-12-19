@@ -1,1 +1,0 @@
-def geneer_lijsten(aantal_lijsten)

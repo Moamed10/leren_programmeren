@@ -1,18 +1,14 @@
 import random
 
-kleuren = ("oranje", "blauw", "groen", "bruin")
+kleuren = ("ORANJE", "BLAUW", "ROOD")
 
-aantal = int(input("Hoeveel M&M's in de zak? "))
-lijst = []
+aantal = int(input("Hoeveel M&M's moeten er aan de zak toegevoegd worden? : "))
+mo = []
 
-def fun():
+def zakje():
     for _ in range(aantal):
-        R = random.choice(kleuren)
-        lijst.append(R)
+        kleur = random.choice(kleuren)
+        mo.append(kleur)
 
-fun()
-print("Inhoud van de zak met M&M's:")
-print(lijst)
-
-
-
+zakje()
+print(f"De hoeveelheid M&M's in de zak: {aantal}\nEn de kleuren: {mo}")
