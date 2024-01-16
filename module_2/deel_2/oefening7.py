@@ -1,20 +1,15 @@
-lijst = []
+import random
 
-aantallijsten = int(input("aantal lijsten : "))
+kleuren = ("ORANJE", "BLAUW", "ROOD")
 
-for x in range(1 ,aantallijsten +1  ):
-    lengte = int(input(f"hoeveel in lijst {x} : "))
+nummer = int(input("Hoeveel M&M's moeten er aan de zak toegevoegd worden? :"))
 
-
-
-for x in range(aantallijsten, lengte ):
-    lijst1 = []
-    lijst1.append(x)
-    lijst.append(lijst1)
+mo = []
+def zakje():
+    for _ in range(nummer):
+        kleur = random.choice(kleuren)
+        mo.append(kleur)
 
 
-print(lijst)
-
-
-
-    
+# zakje()
+print(f"aantal zakjes {nummer}\nen de kleuren: {mo}")
