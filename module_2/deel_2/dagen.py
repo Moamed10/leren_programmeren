@@ -28,3 +28,9 @@ for a in range( 4 , -1, -1):
 print("\n\n\ weekend omgekeerd " ,  end=" , ")
 for x in range(6 , 4 , -1 ):
     print(dagen_van_de_week[x] ,  end=" , ")
+
+
+
+for x in range(1,4):
+    if x == 2 : continue
+    print(dagen_van_de_week[x] ,  end=" , ")
