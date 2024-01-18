@@ -14,8 +14,8 @@ deck.append("Joker")
 deck.append("Joker")
 random.shuffle(deck)
 
-bovenste_7 = deck[:7]
-overige_kaarten = deck[7:]
+bovenste_7 = deck[0,8]
+overige_kaarten = deck[8,]
 aantal = len(overige_kaarten)
 print("Bovenste 7 kaarten:" )
 for kaart in bovenste_7:
