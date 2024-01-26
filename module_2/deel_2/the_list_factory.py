@@ -8,3 +8,17 @@ for x in range(1, aantal_lijstjes + 1):
     lijstjes.append(lijst1)
 
 print(lijstjes)
+
+
+
+
+# aantal_lijstjes = int(input("Hoeveel lijstjes? "))
+
+# lijstjes = []
+
+# for x in range(1, aantal_lijstjes + 1):
+#     lengte = int(input(f"Hoeveel in lijst {x}? "))
+#     lijst = [x] * lengte
+#     lijstjes.append(lijst)
+
+# print(lijstjes)
