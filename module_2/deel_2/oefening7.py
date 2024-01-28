@@ -9,13 +9,9 @@ for kleur in kleuren:
 deck.append("Joker")
 deck.append("Joker")
 random.shuffle(deck)
-
-
 print("Bovenste 7 kaarten:" )
 for x in range(7):
-    print(deck.pop(0))
-    
-
+    print(deck.pop(0))   
 print(f"\nOverige kaarten in het deck: {len(deck)}")
 print(deck)
 # for kaart in overige_kaarten:

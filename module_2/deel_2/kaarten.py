@@ -6,7 +6,6 @@ for kleur in kleuren:
     for waarde in waareds:
         kaart = f"{waarde} van {kleur}"
         deck.append(kaart)
-
 deck.append("Joker")
 deck.append("Joker")
 random.shuffle(deck)
