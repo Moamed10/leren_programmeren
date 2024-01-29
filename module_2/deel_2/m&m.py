@@ -11,6 +11,7 @@ def zakje():
         mo.append(kleur)
         mo.append("oranje")
 
-
+for x in range(kleuren):
+    print(x)
 zakje()
 print(f"aantal zakjes {nummer}\nen de kleuren: {mo}")
