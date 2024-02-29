@@ -9,9 +9,8 @@ def zakje():
     for x in range(nummer):
         kleur = random.choice(kleuren)
         mo.append(kleur)
-        mo.append("oranje")
+        mo.append("oranje") 
 
-for x in range(kleuren):
-    print(x)
+
 zakje()
 print(f"aantal zakjes {nummer}\nen de kleuren: {mo}")

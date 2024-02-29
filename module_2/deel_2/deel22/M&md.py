@@ -5,23 +5,25 @@ kleuren = ["rood", "blauw", "groen", "geel", "bruin"]
 
 nummer = int(input("Hoeveel M&M's moeten er aan de zak toegevoegd worden? :"))
 
-mo = {}
+mm = {}
 
 def zakje():
     for x in range(nummer):
-        if x == 0:
-            # Voeg altijd "rood" toe bij de eerste iteratie
-            kleur = "rood"
-        else:
-            kleur = random.choice(kleuren)
+        kleur = random.choice(kleuren)
 
-        if kleur in mo:
-            mo[kleur] += 1
+        if kleur in mm:
+            mm[kleur] += 1
         else:
-            mo[kleur] = 1
+            mm[kleur] = 1
+        # if kleur == "blauw":
+        #     mm["zwart"] = (mm["blauw"])
+        if kleur == "rood":
+            mm["zwart"] = 10
+
+# als kleur rood = aantal zwart == 10 
 
 zakje()
-print(mo)
+print(mm)
 
 
 
