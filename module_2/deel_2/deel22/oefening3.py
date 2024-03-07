@@ -9,12 +9,9 @@ vertaal_dict = {
 input_tekst = input("Voer een stukje tekst in: ")
 
 
-# fouten  = 0
-for key in vertaal_dict:
+# print(vertaal_dict.keys())
+for key,waarde in vertaal_dict.items():
     if key in input_tekst:
-     input_tekst = input_tekst.replace(key,vertaal_dict[key])
-
+        input_tekst=input_tekst.replace(key,waarde)
 
 print(input_tekst)
-
-# print(vertaal_dict)

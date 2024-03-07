@@ -1,10 +1,11 @@
+
 import random
 
 kleuren = ["rood", "blauw", "groen", "geel", "bruin"]
 
 nummer = int(input("Hoeveel M&M's moeten er aan de zak toegevoegd worden? :"))
 
-mm = {"zwart" :0}
+mm = {"zwart": 0}
 
 def zakje():
     for x in range(nummer):
@@ -14,7 +15,8 @@ def zakje():
             mm[kleur] += 1
         else:
             mm[kleur] = 1
-        if kleur =="blauw":
-            mm["zwart"] = 10
+        mm["zwart"] = (mm["blauw"])
+        
+        
 zakje()
 print(mm)

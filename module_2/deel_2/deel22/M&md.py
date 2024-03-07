@@ -15,12 +15,7 @@ def zakje():
             mm[kleur] += 1
         else:
             mm[kleur] = 1
-        # if kleur == "blauw":
-        #     mm["zwart"] = (mm["blauw"])
-        if kleur == "rood":
-            mm["zwart"] = 10
 
-# als kleur rood = aantal zwart == 10 
 
 zakje()
 print(mm)
