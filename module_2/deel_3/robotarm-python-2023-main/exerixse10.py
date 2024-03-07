@@ -1,19 +1,15 @@
 from RobotArm import RobotArm
-
 robotArm = RobotArm('exercise 10')
 robotArm.speed = 2
-# Jouw python instructies zet je vanaf hier:
-for x in range(5):
+recht = 9
+links = 8
+for bloknummer in range(1,6):
     robotArm.grab()
-    for r in range(9):
+    for r in range(recht):
         robotArm.moveRight()
-    if x == 0 :
-        r -=1
+    recht -=2
     robotArm.drop()
-    for l in range(8):
-        robotArm.moveLeft()
-    
-    
-   
-# Na jouw code wachten tot het sluiten van de window:
+    for l in range(links):
+     robotArm.moveLeft()
+    links-=2
 robotArm.wait()
