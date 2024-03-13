@@ -1,22 +1,25 @@
 from RobotArm import RobotArm
 
-robotArm = RobotArm('exercise 10')
-robotArm.speed = 2
+robotArm = RobotArm('exercise 11')
 
-# Jouw python instructies zet je vanaf hier:
-for x in range(5):
+robotArm.speed = 3
+bloknummer = 9 
+for x in range(8):
     robotArm.grab()
-    
-    # Beweeg naar rechts voordat je het blok laat vallen
-    robotArm.moveRight()
-    
-    robotArm.drop()
-    
-    # Beweeg naar rechts voordat je terugkeert naar de meest linkerpositie
-    robotArm.moveRight()
-    
-    for l in range(8):
-        robotArm.moveLeft()
+    color = robotArm.scan()
 
-# Na jouw code wachten tot het sluiten van het window:
+    if color == "white":
+        bloknummer -=2
+
+        robotArm.moveRight()
+        robotArm.drop()
+
+        
+    else:
+        robotArm.drop()
+
+
+    robotArm.moveRight()  # Move to the next position after dropping the block
+    print(x)
+
 robotArm.wait()
