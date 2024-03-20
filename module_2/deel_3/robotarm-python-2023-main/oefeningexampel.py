@@ -1,32 +1,24 @@
 from RobotArm import RobotArm
 
-# Let op: hier start het anders voor een random level:
-robotArm = RobotArm()
-robotArm.randomLevel(1, 7)
+robotArm = RobotArm('exercise 9')
 robotArm.speed = 3
-recht = 1
-links = 1
-kleuren = ["red", "blue", "white", "green", "yellow"]
 
-# Jouw python instructies zet je vanaf hier:
+# Lijst van stapels met het aantal blokken in elke stapel
+stapels = [[1], [2, 2], [3, 3, 3], [4, 4, 4, 4]]
 
-while True:
-    robotArm.grab()
-    color = robotArm.scan()
-    print(color)
-    
-    if color in kleuren:
-        for r in range(recht):
+# Lijst van doelrijen voor elke stapel
+doelrijen = [5, 6, 7, 8]
+
+# Loop over elke stapel en verplaats de blokken naar de bijbehorende doelrij
+for stapel, doelrij in zip(stapels, doelrijen):
+    for blok in stapel:
+        robotArm.grab()
+        for _ in range(blok - 1):
             robotArm.moveRight()
         robotArm.drop()
-        recht += 1
-        
-        for l in range(links):
+        for _ in range(blok - 1):
             robotArm.moveLeft()
-        links += 1
+    for _ in range(len(stapel)):
+        robotArm.moveRight()  # Verplaats de arm naar de volgende stapel
 
-    else:
-        break
-
-# Na jouw code wachten tot het sluiten van het venster:
 robotArm.wait()

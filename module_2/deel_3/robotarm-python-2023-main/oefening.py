@@ -1,25 +1,21 @@
 from RobotArm import RobotArm
 
 robotArm = RobotArm('exercise 11')
-
 robotArm.speed = 3
-bloknummer = 9 
-for x in range(8):
+aantalkeer = 9
+
+for _ in range(aantalkeer):
     robotArm.grab()
     color = robotArm.scan()
-
     if color == "white":
-        bloknummer -=2
-
+        robotArm.grab()
         robotArm.moveRight()
         robotArm.drop()
-
-        
+        robotArm.moveRight()
+        aantalkeer -= 2
     else:
         robotArm.drop()
-
-
-    robotArm.moveRight()  # Move to the next position after dropping the block
-    print(x)
+        robotArm.moveRight()
+        aantalkeer -= 1
 
 robotArm.wait()

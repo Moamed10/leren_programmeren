@@ -12,7 +12,7 @@
 #     iteration += 1  # De iteratie verhogen
 
 
-
+totaal = 0 
 nummer =50 
 aatal = 1 
 
