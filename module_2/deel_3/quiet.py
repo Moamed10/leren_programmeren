@@ -1,4 +1,5 @@
 x = 0
+
 while True:
     vraag = input("?")
     x +=1 
