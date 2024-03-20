@@ -1,21 +1,16 @@
 from RobotArm import RobotArm
-
-robotArm = RobotArm('exercise 11')
-robotArm.speed = 3
-aantalkeer = 9
-
-for _ in range(aantalkeer):
+robotArm = RobotArm('exercise 12')
+robotArm.speed = 2
+for _ in range(9):
     robotArm.grab()
-    color = robotArm.scan()
-    if color == "white":
-        robotArm.grab()
-        robotArm.moveRight()
-        robotArm.drop()
-        robotArm.moveRight()
-        aantalkeer -= 2
+    color = robotArm.scan()  
+    if color == "red":
+        for _ in range(9):
+            robotArm.moveRight()
+        robotArm.drop()      
+        for _ in range(8):  
+            robotArm.moveLeft()
     else:
         robotArm.drop()
         robotArm.moveRight()
-        aantalkeer -= 1
-
 robotArm.wait()

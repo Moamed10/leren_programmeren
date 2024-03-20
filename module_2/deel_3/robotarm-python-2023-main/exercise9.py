@@ -1,5 +1,6 @@
 from RobotArm import RobotArm
 robotArm = RobotArm('exercise 9')
+robotArm.speed = 3
 aantalblokken = 10
 for _ in range(aantalblokken):
     recht, links = 5, 5
