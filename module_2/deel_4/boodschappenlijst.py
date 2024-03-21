@@ -17,6 +17,6 @@ while True:
 
 print("-[BOODSCHAPPENLIJST]-")
 for x,y in boodschappenlijst.items():
-    print(" ",y, "x" ,x)
+    print("   ",y, "x" ,x)
 
 print("----------------------")
