@@ -1,21 +1,22 @@
-def maak_boodschappenlijst():
-    boodschappenlijst = {}
+boodschappenlijst = {}
 
-    while True:
-        item = input("Voer het item in (of typ 'stop' om te stoppen): ").strip().lower()
-        
-        if item == 'stop':
-            break
-        
-        hoeveelheid = int(input("Voer de hoeveelheid in: "))
+while True:
+    artikel = input("Welk artikel wil je toevoegen? ")
+    aantal = int(input(f"Hoeveel {artikel} wil je toevoegen? "))
 
-        if item in boodschappenlijst:
-            boodschappenlijst[item] += hoeveelheid
-        else:
-            boodschappenlijst[item] = hoeveelheid
+    if artikel in boodschappenlijst:
+        boodschappenlijst[artikel] += aantal
+    else:
+        boodschappenlijst[artikel] = aantal
 
-    print("\nBoodschappenlijstje:")
-    for item, hoeveelheid in boodschappenlijst.items():
-        print(f"{item.capitalize()}: {hoeveelheid}")
+    stoppen = input("Wil je nog meer dingen toevoegen? (j/n) ")
+    if stoppen.lower() == "n":
+        break
 
-maak_boodschappenlijst()
+
+
+print("-[BOODSCHAPPENLIJST]-")
+for x,y in boodschappenlijst.items():
+    print(" ",y, "x" ,x)
+
+print("----------------------")
