@@ -1,0 +1,47 @@
+Initialiseer ronde op 0
+Initialiseer punten op 0
+
+Terwijl ronde kleiner is dan 20:
+    Initialiseer kansen op 0
+    Genereer een willekeurig getal tussen 1 en 1000
+    Toon de huidige ronde
+    
+    Terwijl kansen kleiner is dan 10:
+        Toon het willekeurig gegenereerde getal
+        Vraag de gebruiker om een getal te raden tussen 1 en 1000
+        Bereken het verschil tussen het geraden getal en het willekeurige getal
+        
+        Als het geraden getal gelijk is aan het willekeurige getal:
+            Verhoog ronde met 1
+            Verhoog punten met 1
+            Toon "Je hebt het goed geraden!"
+            Vraag de gebruiker of deze een nieuwe ronde wil beginnen
+            Als het antwoord 'nee' is:
+                Toon de eindscore en beëindig het spel
+                Zet ronde op 20
+            Anders:
+                Ga naar het einde van de huidige ronde
+        
+        Als het geraden getal niet gelijk is aan het willekeurige getal:
+            Verhoog kansen met 1
+            Als het willekeurige getal groter is dan het geraden getal:
+                Toon "Fout, het getal is hoger."
+            Anders:
+                Toon "Fout, het getal is kleiner."
+            Als het absolute verschil kleiner is dan 20:
+                Toon "Je bent heel warm."
+            Anders, als het absolute verschil kleiner is dan 50:
+                Toon "Je bent warm."
+        
+        Als kansen gelijk is aan 10:
+            Toon "Je hebt 10 keer geraden. Het getal was:" gevolgd door het willekeurige getal
+            Verhoog ronde met 1
+            Als ronde kleiner is dan 20:
+                Vraag de gebruiker of deze nog een ronde wil spelen
+                Als het antwoord 'nee' is:
+                    Toon de eindscore en beëindig het spel
+                    Zet ronde op 20
+                Anders:
+                    Ga naar het einde van de huidige ronde
+
+Toon "Je eindscore is:" gevolgd door het aantal punten

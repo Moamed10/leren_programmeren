@@ -28,8 +28,10 @@ if leeftijd >= 18:
         stammbel = False
     drinken = input("wat wil je drinken ? 'cola', 'bier', 'champagne' ")
     if bandje is True and kleur == "blauw" and drinken.lower() in DRANKJES:
-        if drinken ==""
-        print("alsjeblieft complimenten ")
+        if drinken =="champagne":
+            print("wordt ", PRIJS_CHAMPAGNE)
+        else:
+         print("alsjeblieft complimenten ")
     elif drinken.lower() not in DRANKJES:
         print("sorry gen idee wat je bedoelt hier is een glasje water ")
     elif bandje is True and kleur == "rood" and drinken.lower() in DRANKJES:

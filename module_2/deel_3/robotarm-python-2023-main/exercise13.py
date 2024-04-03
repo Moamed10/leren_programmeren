@@ -13,7 +13,6 @@ kleuren = ["red", "blue", "white", "green", "yellow"]
 while True:
     robotArm.grab()
     color = robotArm.scan()
-    print(color)
     
     if color in kleuren:
         for r in range(recht):
