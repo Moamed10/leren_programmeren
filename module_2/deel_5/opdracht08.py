@@ -9,8 +9,6 @@ def fruitmand_gewicht():
     print(gewicht)
 
 
-
-
 fruitmand_gewicht()
 
 fruitmand.append({'name': 'watermeloen', 'weight': 5000})
