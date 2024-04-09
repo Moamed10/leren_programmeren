@@ -1,17 +1,16 @@
 from fruitmand import fruitmand
 
-
-
 def fruitmand_gewicht():
     gewicht = 0
     for fruit in fruitmand:
      gewicht += fruit['weight']
-    print(gewicht)
+    return gewicht
+
+print(fruitmand_gewicht())
 
 
-fruitmand_gewicht()
 
 fruitmand.append({'name': 'watermeloen', 'weight': 5000})
 
-fruitmand_gewicht()
+print(fruitmand_gewicht())
 

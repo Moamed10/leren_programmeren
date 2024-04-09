@@ -1,20 +1,17 @@
 from fruitmand import fruitmand
 import random
 
-
-aantal_keer = int(input('hoveel keer '))
-
-# for aantal in range(aantal_keer):
-#     x = random.randint(0,6)
-#     print(fruitmand[x]['name'])
-    
-
-
+aantal_keer = int(input('hoveel keer ? '))
 lengte = len(fruitmand )
+for _ in range(aantal_keer):
+   fruit =(random.choice(fruitmand))
+   print(fruit['name'])
 
 
-for aantal in range(aantal_keer):
-    x = random.randint(0,lengte -1)
-    print(fruitmand[x]['name'])
+
+
+
+    # x = random.randint(0,lengte )
+    # print(fruitmand[x]['name'])
 
 
