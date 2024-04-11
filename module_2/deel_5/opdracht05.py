@@ -5,7 +5,7 @@ from fruitmand import fruitmand
 #     print(fruit['name'])
 
 
-for fruit in fruitmand[-1:0:-1]:
+for fruit in fruitmand[::-1]:
     print(fruit['name'])
 
 

@@ -1,23 +1,49 @@
-from fruitmand import fruitmand
+from random import shuffle
+fruitmand = [{
+    'name' : 'ananas',
+    'weight' : 1590,
+    'color' : 'yellow',
+    'round' : False
+},{
+    'name' : 'appel',
+    'weight' : 195,
+    'color' : 'green',
+    'round' : True
+},{
+    'name' : 'sinaasappel',
+    'weight' : 130,
+    'color' : 'orange',
+    'round' : True
+},{
+    'name' : 'banaan',
+    'weight' : 120,
+    'color' : 'yellow',
+    'round' : False
+},{
+    'name' : 'druif',
+    'weight' : 5,
+    'color' : 'red',
+    'round' : True
+},{
+    'name' : 'kiwi',
+    'weight' : 75,
+    'color' : 'brown',
+    'round' : False
+},{
+    'name' : 'citroen',
+    'weight' : 100,
+    'color' : 'yellow',
+    'round' : True
+}]
 
-kleuren = set([fruit['color'] for fruit in fruitmand])
-round = 0
-not_round = 0 
+print(fruitmand)
+shuffle(fruitmand)
+print(fruitmand)
+for x in fruitmand:
+    naam = x['name']
+    if naam  == 'druif':
+        fruitmand.remove(x)
 
-vraag = input("Kies een kleur: ")
+# l.pop(1)
 
-while vraag not in kleuren:
-    vraag = input("Fout, kies een andere kleur: ")
-
-for fruit in fruitmand:
-    if fruit["color"] == vraag:
-        round += 1
-    elif fruit["color"] == vraag and fruit["round"] == False:
-        not_round += 1
-
-if round > not_round:
-    print(f"Er zijn {round - not_round} meer ronde vruchten dan niet-ronde vruchten in de kleur {vraag}.")
-elif not_round > round :
-    print(f"Er zijn {not_round - round} meer niet-ronde vruchten dan ronde vruchten in de kleur {vraag}.")
-else:
-    print(f"Er zijn {round} ronde vruchten en {not_round} niet-ronde vruchten in de kleur {vraag}.")
+print(fruitmand)

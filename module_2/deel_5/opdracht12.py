@@ -16,6 +16,10 @@ fruit_namen = []
 for fruit in fruitmand:
     fruit_namen.append(fruit['name'])
 
+def get_weight(data: dict) -> float:
+    return data.get('weight', 0)
+
+
 # Vind de langste fruitnaam
 langste = max(fruit_namen, key=len)
 

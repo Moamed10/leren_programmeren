@@ -10,9 +10,9 @@ while vraag not in kleuren:
     vraag = input("Fout, kies een andere kleur: ")
 
 for fruit in fruitmand:
-    if fruit["color"] == vraag and fruit["round"] == True:
+    if fruit["color"] == vraag and fruit["round"] :
         round += 1
-    elif fruit["color"] == vraag and fruit["round"] == False:
+    elif fruit["color"] == vraag and not fruit["round"]:
         not_round += 1
 
 if round > not_round:
