@@ -1,0 +1,33 @@
+Initialiseer een lege lijst genaamd namen_lijst
+
+Zet ok = True
+
+Herhaal terwijl ok waar is:
+    Vraag de gebruiker om een naam in te voeren en sla deze op in naam
+    Als naam al in namen_lijst staat:
+        Geef de melding "Deze naam is al ingevoerd. Voer een unieke naam in."
+    Anders:
+        Voeg naam toe aan namen_lijst
+        Als de lengte van namen_lijst groter is dan of gelijk aan 3:
+            Vraag de gebruiker of ze nog een naam willen invoeren (ja/nee) en sla het antwoord op in extra_naam_optie
+            Als extra_naam_optie "nee" is:
+                Zet ok = False
+
+Maak een kopie van namen_lijst genaamd copy_lijst
+Schud de elementen in copy_lijst willekeurig
+
+Zet again = True
+
+Herhaal terwijl again waar is:
+    Initialiseer een lege dictionary genaamd namen_dict
+    Voor elke naam en lootje in de gecombineerde lijst van namen_lijst en copy_lijst:
+        Als naam gelijk is aan lootje:
+            Schud de elementen in copy_lijst opnieuw
+        Anders:
+            Voeg een sleutel-waarde paar toe aan namen_dict waarbij de sleutel naam is en de waarde lootje
+
+    Als de lengte van namen_dict gelijk is aan de lengte van namen_lijst:
+        Zet again = False
+
+Voor elke sleutel, waarde in namen_dict:
+    Toon sleutel ":" waarde
