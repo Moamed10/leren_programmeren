@@ -3,7 +3,7 @@ Initialiseer een lege lijst genaamd namen_lijst
 Zet ok = True
 
 Herhaal terwijl ok waar is:
-    Vraag de gebruiker om een naam in te voeren en sla deze op in naam
+    Vraag de gebruiker om een naam in te voeren 
     Als naam al in namen_lijst staat:
         Geef de melding "Deze naam is al ingevoerd. Voer een unieke naam in."
     Anders:
@@ -23,6 +23,7 @@ Herhaal terwijl again waar is:
     Voor elke naam en lootje in de gecombineerde lijst van namen_lijst en copy_lijst:
         Als naam gelijk is aan lootje:
             Schud de elementen in copy_lijst opnieuw
+            breek af
         Anders:
             Voeg een sleutel-waarde paar toe aan namen_dict waarbij de sleutel naam is en de waarde lootje
 
