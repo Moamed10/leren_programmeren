@@ -6,6 +6,10 @@ def data_verzamelen():
             break
         leeftijd = int(input("Hoe oud bent u: "))
         gegevens.append(f"{naam} is {leeftijd} jaar")
+    
+    for item in gegevens:
+        print(item)
+    
     return gegevens
 
-print(data_verzamelen())
+data_verzamelen()
