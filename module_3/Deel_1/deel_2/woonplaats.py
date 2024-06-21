@@ -5,10 +5,11 @@ def data_verzamelen():
         if naam.lower() == "stop":
             break
         leeftijd = int(input("Hoe oud bent u: "))
-        gegevens.append(f"{naam} is {leeftijd} jaar")
+        woonplaats = input("Wat is je woonplaats: ")
+        gegevens.append({"name": naam, "age": leeftijd, "city": woonplaats})
     
     for item in gegevens:
-        print(item)
+        print(f"{item['name']} is {item['age']} jaar en woont in {item['city']}")
     
     return gegevens
 
