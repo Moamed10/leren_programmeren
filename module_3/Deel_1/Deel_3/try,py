@@ -1,0 +1,87 @@
+from functions import addition, subtraction, multiplication, division
+def get_user_choice():
+    print("Wat wilt u doen?")
+    print("A) getallen optellen")
+    print("B) getallen aftrekken")
+    print("C) getallen vermenigvuldigen")
+    print("D) getallen delen")
+    print("E) getal ophogen")
+    print("F) getal verlagen")
+    print("G) getal verdubbelen")
+    print("H) getal halveren")
+    print("I) niets")
+
+    choice = input("Maak een keuze: ").strip().upper()
+    return choice
+
+# def addition(number1, number2):
+#     return number1 + number2
+
+# def subtraction(number1, number2):
+#     return number1 - number2
+
+# def multiplication(number1, number2):
+#     return number1 * number2
+
+# def division(number1, number2):
+#     if number2 == 0:
+#         return "Error: Division by zero is undefined"
+#     return number1 / number2
+
+# def increment(number):
+#     return number + 1
+
+# def decrement(number):
+#     return number - 1
+
+# def double(number):
+#     return number * 2
+
+# def halve(number):
+#     return number / 2
+
+def bereken():
+    keuze = get_user_choice()
+    
+    if keuze in ["A", "B", "C", "D"]:
+        nr1 = float(input("Wat is je eerste getal? "))
+        nr2 = float(input("Wat is je tweede getal? "))
+        
+        if keuze == "A":
+            result = addition(nr1, nr2)
+        elif keuze == "B":
+            result = subtraction(nr1, nr2)
+        elif keuze == "C":
+            result = multiplication(nr1, nr2)
+        elif keuze == "D":
+            result = division(nr1, nr2)
+        
+        print(f"Het resultaat is: {result}")
+        
+    elif keuze == "E":
+        nr = float(input("Wat is je getal? "))
+        result = increment(nr)
+        print(f"Het resultaat is: {result}")
+        
+    elif keuze == "F":
+        nr = float(input("Wat is je getal? "))
+        result = decrement(nr)
+        print(f"Het resultaat is: {result}")
+        
+    elif keuze == "G":
+        nr = float(input("Wat is je getal? "))
+        result = double(nr)
+        print(f"Het resultaat is: {result}")
+        
+    elif keuze == "H":
+        nr = float(input("Wat is je getal? "))
+        result = halve(nr)
+        print(f"Het resultaat is: {result}")
+        
+    elif keuze == "I":
+        print("Niets gekozen. Tot ziens!")
+        
+    else:
+        print("Ongeldige keuze. Probeer het opnieuw.")
+
+bereken()
